@@ -25,6 +25,18 @@ module.exports = {
                 }
             },
             {
+                test: /\.jsx$/,
+                exclude: /node_modules/,
+                loader: "babel-loader",
+                options: {
+                    presets: ["@babel/preset-react"],
+                    plugins: ["@babel/plugin-syntax-jsx",
+                        "@babel/plugin-transform-react-jsx",
+                        "@babel/plugin-transform-react-display-name",
+                        "@babel/plugin-proposal-class-properties"]
+                }
+            },
+            {
                 test: /\.css$/,
                 use: [
                     {
