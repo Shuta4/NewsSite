@@ -1,22 +1,51 @@
-@font-face {
-  font-family: 'Roboto';
-  font-style:  normal;
-  font-weight: 900;
-  src: url("fonts/roboto-medium-webfont.woff") format("woff");
-}
-
-
+/*Roboto fonts*/
 @font-face {
   font-family: 'Roboto';
   font-style:  normal;
   font-weight: 400;
-  src: url("fonts/roboto-regular-webfont.woff") format("woff");
+  src: url("fonts/Roboto/Roboto-Regular.ttf") format("opentype");
 }
-
-
 @font-face {
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto';
+  font-style:  italic;
+  font-weight: 400;
+  src: url("fonts/Roboto/Roboto-Italic.ttf") format("opentype");
+}
+@font-face {
+  font-family: 'Roboto';
   font-style:  normal;
   font-weight: 900;
-  src: url("fonts/robotoslab-regular-webfont.woff") format("woff");
+  src: url("fonts/Roboto/Roboto-Bold.ttf") format("opentype");
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style:  italic;
+  font-weight: 900;
+  src: url("fonts/Roboto/Roboto-BoldItalic.ttf") format("opentype");
+}
+
+/*PlayfairDisplay fonts*/
+@font-face {
+  font-family: 'PlayfairDisplay';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("fonts/Playfair_Display/PlayfairDisplay-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: 'PlayfairDisplay';
+  font-style:  italic;
+  font-weight: 400;
+  src: url("fonts/Playfair_Display/PlayfairDisplay-Italic.ttf") format("woff");
+}
+@font-face {
+  font-family: 'PlayfairDisplay';
+  font-style:  normal;
+  font-weight: 900;
+  src: url("fonts/Playfair_Display/PlayfairDisplay-Bold.ttf") format("opentype");
+}
+@font-face {
+  font-family: 'PlayfairDisplay';
+  font-style:  italic;
+  font-weight: 900;
+  src: url("fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf") format("opentype");
 }
