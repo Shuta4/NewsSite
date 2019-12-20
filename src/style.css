@@ -1,15 +1,53 @@
 @import url(vendor/normalize.css);
 @import url(vendor/fonts.css);
 
+/*Common styles*/
 html,
 body {
     height: 100%;
+    width: 99%;
 }
 .root {
     height: 100%;
+    width: 99%;
     background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+/*Header styles*/
+.header-main {
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    border-bottom: solid black 5px;
+}
+.header-main__logo__text {
+    float: left;
+    font-size: 48px;
+    font-family: "PlayfairDisplay";
+    align-self: center;
+    margin: 10px 25px;
+}
+.header-main__logo__image {
+    float: left;
+    width: auto;
+    height: 75px;
+    margin: 5px 25px;
+}
+
+/*Profile styles*/
+.header-main__profile-info {
+    float: right;
+    margin-right: 10px;
+}
+
+/*Navigation styles*/
+.navigation-main {
+    clear: both;
 }
