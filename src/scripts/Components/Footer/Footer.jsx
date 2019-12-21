@@ -1,4 +1,5 @@
 import React from "react";
+import Contacts from "./Contacts.jsx"
 
 class Footer extends React.Component {
     constructor(props) {
@@ -6,7 +7,7 @@ class Footer extends React.Component {
     }
 
     render() {
-        return <footer className="footer-main">Это футер</footer>
+        return <footer className="footer-main">Контакты: <Contacts /></footer>
     }
 }
 export default Footer
