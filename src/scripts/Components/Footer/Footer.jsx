@@ -7,7 +7,18 @@ class Footer extends React.Component {
     }
 
     render() {
-        return <footer className="footer-main">Контакты: <Contacts /></footer>
+        return <footer className="footer-main"><Contacts 
+                contactTelephone={this.props.contactTelephone} 
+                contactTelephoneReadable={this.props.contactTelephoneReadable} 
+                contactEmail={this.props.contactEmail} 
+                gitHubPageUrl={this.props.gitHubPageUrl} />
+            </footer>
     }
+}
+Footer.defaultProps = {
+    contactTelephone: "",
+    contactTelephoneReadable: "No telephone",
+    contactEmail: "No email",
+    gitHubPageUrl: "No github page"
 }
 export default Footer

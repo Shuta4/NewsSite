@@ -6,10 +6,10 @@ class Contacts extends React.Component {
     }
 
     render() {
-        return <div className="footer-main__contacts">
-            <p>Email: <a href="mailto:skirdin.nik@gmail.com" title="email">skirdin.nik@gmail.com</a></p>
-            <p>Telephone: <a href="tel:+79157000000" title="telephone">+7 915-7**-**-**</a></p>
-            <p><a href="https://github.com/Shuta4/NewsSite" target="_blank" title="GitHub page">GitHub page</a></p>
+        return <div className="footer-main__contacts"> <p>Контакты:</p> 
+            <p>Email: <a href="mailto:skirdin.nik@gmail.com" title="email">{this.props.contactEmail}</a></p>
+            <p>Telephone: <a href={"tel:" + this.props.contactTelephone} title="telephone">{this.props.contactTelephoneReadable}</a></p>
+            <p><a href={this.props.gitHubPageUrl} target="_blank" title="GitHub page">GitHub page</a></p>
             </div>
     }
 }
