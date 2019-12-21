@@ -5,11 +5,11 @@
 html,
 body {
     height: 100%;
-    width: 99%;
+    width: 100%;
 }
 .root {
     height: 100%;
-    width: 99%;
+    width: 100%;
     background: white;
     display: flex;
     flex-direction: column;
@@ -60,17 +60,21 @@ body {
 
 /*Footer styles*/
 .footer-main {
+    display: flex;
     position: fixed;
     bottom: 0px;
     left: 0px;
     width: 100%;
     border-top: 5px solid black;
     height: 50px;
-}
-.footer-main__contacts {
+    flex-wrap: wrap;
     font-size: 14px;
 }
+.footer-main__contacts {
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
 .footer-main__contacts p {
-    float: left;
-    margin: 0 2px;
+    margin: 0 5px;
 }
