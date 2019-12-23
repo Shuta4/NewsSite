@@ -1,15 +1,15 @@
 {
-  "name": "repname",
+  "name": "newssite",
   "version": "0.0.1",
-  "description": "project description",
-  "main": "index.js",
+  "description": "site that shows news",
+  "main": "App.jsx",
   "scripts": {
     "build": "rimraf dist && webpack --mode production",
     "dev": "webpack-dev-server --mode development --open --watch"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Shuta4/NewsSite"
   },
   "keywords": [
     "Project name"
@@ -17,9 +17,9 @@
   "author": "Nikita Skirdin",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "mailto:skirdin.nik@gmail.com"
   },
-  "homepage": "",
+  "homepage": "https://github.com/Shuta4/NewsSite",
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
@@ -50,6 +50,8 @@
     "postcss-preset-env": "^6.7.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
     "swiper": "^5.2.0"
   }
 }
