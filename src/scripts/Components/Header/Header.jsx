@@ -14,7 +14,7 @@ class Header extends React.Component {
                     <h1 className="header-main__logo__text">{this.props.siteName}</h1>
                 </div>
                 <ProfileInfo />
-                <Navigation />
+                <Navigation navigationArr={this.props.navigationArr} />
             </header>
     }
 }
