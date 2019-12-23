@@ -2,6 +2,30 @@ import ReactDOM from 'react-dom';
 import React from "react";
 import Page from "./Components/Page/Page.jsx";
 import "../style.css"
+import AboutUs from './Components/Pages/AboutUs.jsx'
+import Home from './Components/Pages/Home.jsx'
+
+const navigationArr = [
+    {
+        to: "/aboutus",
+        title: "About us"
+    },
+    {
+        to: "/",
+        title: "Home"
+    }
+]
+
+const routeArr = [
+    {
+        path: "/aboutus",
+        component: AboutUs
+    },
+    {
+        path: "/",
+        component: Home
+    }
+]
 
 const contArr = [{
     contactName: "Телефон",
@@ -21,6 +45,8 @@ const contArr = [{
 }]
 
 ReactDOM.render(<Page 
+    navigationArr = {navigationArr}
+    routeArr = {routeArr}
     contactsArr={contArr}
     siteImage="https://www.101domain.ua/images/flags/large/NEWS.png"
     siteName="News Site" />, 
