@@ -21,7 +21,7 @@ class Page extends React.Component {
                 <main>
                     {
                         this.props.routeArr.map((value, key) => {
-                        return <Route key={key} path={value.path} component={value.component} exact />
+                        return <Route key={key} path={value.path} component={value.component} exact={value.exact} />
                         })
                     }
                 </main>
