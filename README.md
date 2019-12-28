@@ -8,7 +8,8 @@ Created by Skirdin Nikita (https://github.com/Shuta4)
 ### Frontend
 * React js
 ### Backend
-
+* Express
+* Node
 ## Goals is
 * to make site showing news
 * to make project with OOP
