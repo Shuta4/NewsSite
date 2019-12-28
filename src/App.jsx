@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 import React from "react";
 import Page from "./Components/Page.jsx";
-import "../style.css"
+import "./style.css"
 import AboutUs from './Components/Pages/AboutUs.jsx'
 import Home from './Components/Pages/Home.jsx'
 
