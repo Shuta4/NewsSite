@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../Header/Header.jsx";
-import Footer from "../Footer/Footer.jsx";
+import Header from "./Header.jsx";
+import Footer from "./Footer.jsx";
 import {Router, Route, Switch} from 'react-router-dom';
 import {createBrowserHistory} from 'history';
 

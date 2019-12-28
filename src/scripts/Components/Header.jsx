@@ -1,6 +1,6 @@
 import React from "react";
-import Navigation from "../Navigation/Navigation.jsx"
-import ProfileInfo from "../Profile/ProfileInfo.jsx"
+import Navigation from "./Navigation.jsx"
+import ProfileInfo from "./ProfileInfo.jsx"
 
 class Header extends React.Component {
     constructor(props) {
