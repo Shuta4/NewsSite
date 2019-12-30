@@ -3,7 +3,7 @@ import React from 'react';
 import App from './Components/App.jsx'
 import Home from "./Components/Pages/Home.jsx";
 import Articles from './Components/Pages/Articles.jsx';
-import AboutUs from './Components/Pages/AboutUs.jsx';
+import About from './Components/Pages/About.jsx';
 import "./style.css"
 
 const navigationArr = [
@@ -28,7 +28,7 @@ const routeArr = [
     },
     {
         path: "/about",
-        component: AboutUs,
+        component: About,
         exact: true
     },
     {
@@ -41,17 +41,17 @@ const contArr = [{
     contactName: "Телефон",
     contactUrl: "tel:+79157000000",
     contactTitle: "Telephone",
-    contactString: "+7 915-7**-**-**",
+    contactString: "+7 915-7**-**-**"
 }, {
     contactName: "Электронная почта",
     contactUrl: "mailto:skirdin.nik@gmail.com",
     contactTitle: "Email",
-    contactString: "skirdin.nik@gmail.com",
+    contactString: "skirdin.nik@gmail.com"
 }, {
     contactName: "",
     contactUrl: "https://github.com/Shuta4/NewsSite",
     contactTitle: "GitHub page",
-    contactString: "Страница на GitHub.com",
+    contactString: "Страница на GitHub.com"
 }]
 const articleArr = [
     {
