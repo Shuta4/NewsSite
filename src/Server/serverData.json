@@ -1,0 +1,51 @@
+{
+    "siteImage": "https://www.101domain.ru/images/flags/large/NEWS.png",
+    "siteName": "Новостной сайт",
+    "routeArr": [
+        {
+            "path": "/",
+            "component": "./Components/Pages/Home.jsx",
+            "exact": true
+        },
+        {
+            "path": "/about",
+            "component": "./Components/Pages/About.jsx",
+            "exact": true
+        },
+        {
+            "path": "/articles",
+            "component": "./Components/Pages/Articles.jsx",
+            "exact": true
+        }],
+    "navigationArr": [
+        {
+            "to": "/",
+            "title": "Home"
+        },
+        {
+            "to": "/about",
+            "title": "About"
+        },
+        {
+            "to": "/articles",
+            "title": "Articles"
+        }],
+    "contArr": [{
+            "contactName": "Телефон",
+            "contactUrl": "tel:+79157000000",
+            "contactTitle": "Telephone",
+            "contactString": "+7 915-7**-**-**"
+        }, 
+        {
+            "contactName": "Электронная почта",
+            "contactUrl": "mailto:skirdin.nik@gmail.com",
+            "contactTitle": "Email",
+            "contactString": "skirdin.nik@gmail.com"
+        }, 
+        {
+            "contactName": "",
+            "contactUrl": "https://github.com/Shuta4/NewsSite",
+            "contactTitle": "GitHub page",
+            "contactString": "Страница на GitHub.com"
+        }]
+}
