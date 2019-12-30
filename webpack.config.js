@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = {
     entry: {
-        main: './src/index.js',
+        main: './src/App/index.jsx',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -100,7 +100,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             inject: false,
-            template: './src/index.html',
+            template: './src/App/index.html',
             filename: 'index.html'
         }),
         new WebpackMd5Hash()

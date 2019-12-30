@@ -9,11 +9,13 @@ class Header extends React.Component {
 
     render() {
         return <header className="header-main">
-                <div className="header-main__logo">
-                    <img src={this.props.siteImage} alt="logo" className="header-main__logo__image" />
-                    <h1 className="header-main__logo__text">{this.props.siteName}</h1>
+                <div className="header-main__top-wrapper">
+                    <div className="header-main__logo">
+                        <img src={this.props.siteImage} alt="logo" className="header-main__logo__image" />
+                        <h1 className="header-main__logo__text">{this.props.siteName}</h1>
+                    </div>
+                    <ProfileInfo />
                 </div>
-                <ProfileInfo />
                 <Navigation navigationArr={this.props.navigationArr} />
             </header>
     }

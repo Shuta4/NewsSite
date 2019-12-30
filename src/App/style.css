@@ -30,9 +30,19 @@ body {
     width: 100%;
     background-color: white;
     border-bottom: solid black 5px;
+    display: flex;
+    flex-direction: column;
+}
+.header-main__top-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.header-main__logo {
+    display: flex;
+    flex-direction: row;
 }
 .header-main__logo__text {
-    float: left;
     font-size: 48px;
     font-family: "PlayfairDisplay";
     font-weight: 900;
@@ -41,21 +51,28 @@ body {
     margin: 10px 25px;
 }
 .header-main__logo__image {
-    float: left;
     width: auto;
-    height: 75px;
+    height: 70px;
     margin: 5px 25px;
 }
 
 /*Profile styles*/
 .header-main__profile-info {
-    float: right;
+    margin-left: auto;
     margin-right: 10px;
 }
 
 /*Navigation styles*/
 .navigation-main {
     clear: both;
+}
+.navigation-main ul {
+    list-style-type: none;
+    margin: 0px;
+}
+.navigation-main ul li {
+    display: inline;
+    margin: 5px;
 }
 
 /*Footer styles*/
