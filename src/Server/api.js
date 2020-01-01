@@ -1,13 +1,21 @@
+const fs = require('fs');
 const express = require('express');
 const router = express.Router();
-const Article = require('./db/Schemas/article')
+const Article = require('./db/Schemas/article');
+
+function getDataJSON(path) {
+    var dataJSON = fs.readFile(path);
+    return JSON.parse(dataJSON);
+}
 
 router.get('/start', (req, res) => {
     // siteImage, siteName, route, contacts and navigation Arrs
+    res.send(getDataJSON("./serverData.json"));
 });
 
 router.put('/start', (req, res) => {
-    // Update site information
+    // Update site information 
+    //TODO
 });
 
 router.get('/articles', (req, res) => {
