@@ -3,6 +3,7 @@ import React from 'react';
 /* 
     В пропсы данного компонента нужно отдавать объект "articleInfo"
     В данном объекте должен содержаться: 
+        - ID статьи, который схож с URL ("/articles/:id") статьи "articleID" 
         - Заголовок статьи "articleHeader"
         - Содержание статьи "articleText"
         - Источник (если есть) объект "articleSource", содержащий: 
