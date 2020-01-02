@@ -38,6 +38,11 @@ router.delete('/articles/:id', (req, res) => {
     Article.deleteOne({id: req.params.id})
 });
 
+router.delete('/articles/objid/:id', (req, res) => {
+    // delete article with "_id" == "req.params.id"
+    Article.findByIdAndDelete(req.params.id).then(() => res.send("Deleted successfully"))
+});
+
 router.post('/articles', (req, res) => {
     // Add article
     Article.create(req.body).then(article => res.send(article))
