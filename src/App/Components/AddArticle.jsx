@@ -1,5 +1,4 @@
 import React from "react"
-import addArticle from '../Actions/AddArticleAction'; 
 
 class AddArticle extends React.Component {
     constructor(props) {
@@ -102,6 +101,7 @@ class AddArticle extends React.Component {
     }
     render() {
         return <form className="article-add" onSubmit={this.handlerSubmit}>
+            <h3>Добавление статьи</h3>
             <p className="article-add__label">Введите название статьи*:</p>
             <input type="text" name="header" />
             <p className="article-add__label">Введите текст статьи*:</p>
