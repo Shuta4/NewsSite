@@ -7,9 +7,11 @@ Created by Skirdin Nikita (https://github.com/Shuta4)
 * Jsx
 ### Frontend
 * React js
+* Redux
 ### Backend
 * Express
 * Node
+* Mongodb
 ## Goals is
 * to make site showing news
 * to make project with OOP
