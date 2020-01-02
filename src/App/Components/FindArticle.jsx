@@ -12,6 +12,7 @@ class FindArticle extends React.Component {
     }
     render() {
         return <form className="article-find" onSubmit={this.handlerSubmit}>
+            <h3>Искать статью</h3>
             <select name="select"> 
                 <option value="name">Искать по имени</option>
                 <option value="id">Искать по ID</option>
