@@ -27,11 +27,9 @@ class AddArticle extends React.Component {
         }
     }
     parseDateReadable(date) {
-        console.log(date)
         var dateObj = this.parseDateObj(date)
         var str = ""
         str += dateObj.day;
-        console.log(dateObj.month)
         switch (dateObj.month) {
             case ("01"):
                 str += " Января"
