@@ -8,7 +8,7 @@ class AllArticles extends React.Component {
         super(props);
     }
     componentDidMount() {
-        this.props.fetchData("/api/articles")
+        this.props.fetchData("http://localhost:3000/api/articles")
     }
     render() {
         return <div className="articles">
@@ -28,7 +28,7 @@ class AllArticles extends React.Component {
                             date: new Date(value.creationDate)
                         }
                     };
-                    <Article key={index} articleInfo={obj}/>
+                    return <Article key={index} articleInfo={obj}/>
                 })
             }
         </div>
@@ -43,7 +43,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        fetchData: url => {dispatch(articlesFetchData())}
+        fetchData: url => {dispatch(articlesFetchData(url))}
     }
 }
 
