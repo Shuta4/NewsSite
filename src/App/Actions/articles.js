@@ -7,13 +7,18 @@ export function articlesFetchDataSuccess(articles) {
 
 export function articlesFetchData(url) {
     return (dispatch)=> {
-        fetch(url).then(response => {
+        fetch(url, {
+            headers:{
+                "accepts":"application/json"
+            }
+        }).then(response => {
             if(!response.ok) throw new Error(response.statusText);
             return response;
         }).then(response => {
-            response.json()
-        }).then(articles => {
-            dispatch(articlesFetchDataSuccess(articles))
+            console.log(response)
+            response.json().then(articles => {
+                dispatch(articlesFetchDataSuccess(articles))
+            })
         })
     }
 }
