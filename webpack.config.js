@@ -11,7 +11,8 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: (chunkData) => {
             return chunkData.chunk.name === 'main' ? '[name].[hash].js' : '[name]/[name].[hash].js';
-        }
+        },
+        publicPath: '/'
     },
     module: {
         rules: [
@@ -86,6 +87,9 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+      historyApiFallback: true,
+    },
     plugins: [
         new MiniCssExtractPlugin({
             filename: 'style.[contenthash].css',
@@ -105,5 +109,4 @@ module.exports = {
         }),
         new WebpackMd5Hash()
     ]
-}
-;
+};
