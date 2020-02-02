@@ -9,7 +9,8 @@ export function articlesFetchData(url) {
     return (dispatch)=> {
         fetch(url, {
             headers:{
-                "accepts":"application/json"
+                "accepts":"application/json",
+                "Origin": "http://localhost:8080"
             }
         }).then(response => {
             if(!response.ok) throw new Error(response.statusText);
