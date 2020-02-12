@@ -6,6 +6,7 @@ import React from 'react';
         - ID статьи, который схож с URL ("/articles/:id") статьи "articleID" 
         - Заголовок статьи "articleHeader"
         - Содержание статьи "articleText"
+        - Автор статьи "articleAuthor"
         - Источник (если есть) объект "articleSource", содержащий: 
             - "sourceLink" (ссылка, которая будет помещена в атрибут "href" тега "a")
             - "sourceName" (текст, который будет помещен в тег "a").
@@ -36,12 +37,13 @@ class Article extends React.Component {
             <h3 className="article-full__header">{this.props.articleInfo.articleHeader}</h3>
             <div className="article-full__text">{this.props.articleInfo.articleText}</div>
             <div className="article-full__footer">
-                <time datetime={this.props.articleInfo.articleCreationDate.date}>
+                <time dateTime={this.props.articleInfo.articleCreationDate.date}>
                     {this.props.articleInfo.articleCreationDate.text}
                 </time>
                 {
                     this.renderArticleSource()
                 }
+                <p className="article-full__footer__author">{this.props.articleInfo.articleAuthor}</p>
             </div>
         </article>
     }
