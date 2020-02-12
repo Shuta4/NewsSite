@@ -16,7 +16,6 @@ export function articlesFetchData(url) {
             if(!response.ok) throw new Error(response.statusText);
             return response;
         }).then(response => {
-            console.log(response)
             response.json().then(articles => {
                 dispatch(articlesFetchDataSuccess(articles))
             })
