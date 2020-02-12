@@ -8,59 +8,52 @@ function getDataJSON(path) {
     return JSON.parse(dataJSON);
 }
 
-router.get('/start', (req, res, next) => {
+router.get('/start', (req, res) => {
     // siteImage, siteName, route, contacts and navigation Arrs
     res.send(getDataJSON("./serverData.json"));
 });
 
-router.put('/start', (req, res, next) => {
+router.put('/start', (req, res) => {
     // Update site information 
     //TODO
 });
 
-router.get('/articles', (req, res, next) => {
+router.get('/articles', (req, res) => {
     // All articles
     Article.find({}).then(articles => {
         res.send(articles)
     });
-    next();
 });
 
-router.get('/articles/id/:id', (req, res, next)=> {
+router.get('/articles/id/:id', (req, res)=> {
     // Article by id
     Article.findOne({id: req.params.id}).then(article => res.send(article));
-    next();
 });
 
-router.get('/articles/header/:header', (req, res, next) => {
+router.get('/articles/header/:header', (req, res) => {
     // Article by its header
     Article.find({header: req.params.header}).then(article => res.send(article));
-    next();
 });
 
-router.delete('/articles/:id', (req, res, next) => {
+router.delete('/articles/:id', (req, res) => {
     // delete article with "id" == "req.params.id"
     Article.deleteOne({id: req.params.id});
-    next();
 });
 
-router.delete('/articles/objid/:id', (req, res, next) => {
+router.delete('/articles/objid/:id', (req, res) => {
     // delete article with "_id" == "req.params.id"
     Article.findByIdAndDelete(req.params.id).then(() => res.send("Deleted successfully"));
-    next();
 });
 
-router.post('/articles', (req, res, next) => {
+router.post('/articles', (req, res) => {
     // Add article
     Article.create(req.body).then(article => res.send(article));
-    next();
 });
 
-router.put('/articles/:id', (req, res, next) => {
+router.put('/articles/:id', (req, res) => {
     // Update article with "id" == "req.params.id"
     Article.findOneAndUpdate({id: req.params.id}, req.body).then(() => Article.findOne({id: req.params.id}))
         .then(article => res.send(article));
-    next();
 });
 
 module.exports = router;
