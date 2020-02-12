@@ -23,6 +23,7 @@ class AllArticles extends React.Component {
                             sourceLink: value.sourceLink,
                             sourceName: value.sourceName
                         },
+                        articleAuthor: value.author,
                         articleCreationDate: {
                             text: value.creationDateText,
                             date: new Date(value.creationDate)
