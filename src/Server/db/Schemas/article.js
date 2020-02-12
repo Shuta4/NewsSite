@@ -4,6 +4,7 @@ const ArticleSchema = new Schema({
     id: String,
     header: String,
     text: String,
+    author: String,
     sourceLink: String,
     sourceName: String,
     creationDateText: String, 
