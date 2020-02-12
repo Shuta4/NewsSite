@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import articlesAddData from '../Actions/addArticle';
 
 class AddArticle extends React.Component {
     constructor(props) {
@@ -90,12 +91,13 @@ class AddArticle extends React.Component {
             id: this.generateID(10),
             header: form.header.value,
             text: form.text.value,
+            author: form.author.value,
             sourceLink: form.sourceURL.value,
             sourceName: form.sourceName.value,
             creationDateText: this.parseDateReadable(form.creationDate.value), 
             creationDate: this.parseDateUNIX(form.creationDate.value)
         }
-        addArticle(article)
+        articlesAddData("http://localhost:3000/api/articles", article);
     }
     render() {
         return <form className="article-add" onSubmit={this.handlerSubmit}>
@@ -104,6 +106,8 @@ class AddArticle extends React.Component {
             <input type="text" name="header" />
             <p className="article-add__label">Введите текст статьи*:</p>
             <textarea type="text" name="text"/>
+            <p className="article-add__label">Введите автора (TEMP!)*:</p>
+            <input type="text" name="author"/>
             <p className="article-add__label">Введите источник:</p>
             <input type="text" name="sourceName"/>
             <p className="article-add__label">Введите ссылку на источник:</p>
