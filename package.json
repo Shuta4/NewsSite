@@ -6,7 +6,8 @@
   "scripts": {
     "build": "rimraf dist && webpack --mode production",
     "dev": "webpack-dev-server --mode development --open --watch",
-    "server": "nodemon ./src/Server/index.js"
+    "server": "nodemon ./src/Server/index.js",
+    "startdb": "C:/PROGRA~1/MongoDB/Server/4.2/bin/mongod.exe"
   },
   "repository": {
     "type": "git",
